@@ -27,3 +27,12 @@ setInterval(function () {    // så bruker man setInterval funksjonen for å lag
     const randomColor = colors[Math.floor(Math.random() * colors.length)];  // (Måtte ha hjelp fra chat GPT)
     document.getElementById("para3").style.backgroundColor = randomColor; // så må man velge elementet dette skal gjelde for og beskrive hva som skal gjøres (bytte farge)
 }, 3000); // intervall satt til hvert 3.sekund (3000 millisekund)
+
+
+$(function() {   // først lager man en function
+    $("#toggleButton").click(function(){ // så må man definere hilken knapp funksjonen skal gjelde for å legge på en click function
+        $("#pokemon-list").toggle("hide");  // til slutt må man definere hva funksjonen skal gjøre.
+    }
+
+)
+});
